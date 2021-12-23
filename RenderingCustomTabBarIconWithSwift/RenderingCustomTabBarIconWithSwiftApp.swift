@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RenderingCustomTabBarIconWithSwiftApp: App {
+    
+    let state = State()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(state)
         }
     }
 }
